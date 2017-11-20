@@ -1,0 +1,158 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>JavaDevHW4</display-name>
+
+    <!--Main page servlets-->
+
+    <servlet>
+        <servlet-name>MainPageServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.MainPageServlet</servlet-class>
+    </servlet>
+
+    <!--Errors servlets-->
+
+    <servlet>
+        <servlet-name>ErrorStatusServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.ErrorStatusServlet</servlet-class>
+    </servlet>
+
+    <!--OK servlets-->
+
+    <servlet>
+        <servlet-name>DoneStatusServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.DoneStatusServlet</servlet-class>
+    </servlet>
+
+    <!--Manufacturers servlets-->
+
+    <servlet>
+        <servlet-name>ManufacturerGetAllServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.manufacturer.ManufacturerGetAllServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufacturerGetServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.manufacturer.ManufacturerGetServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufacturerCreateServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.manufacturer.ManufacturerCreateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufacturerUpdateServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.manufacturer.ManufacturerUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufacturerDeleteServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.manufacturer.ManufacturerDeleteServlet</servlet-class>
+    </servlet>
+
+    <!--Products servlets-->
+
+    <servlet>
+        <servlet-name>ProductsGetAllServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.product.ProductGetAllServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductGetServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.product.ProductGetServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductCreateServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.product.ProductCreateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductUpdateServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.product.ProductUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductDeleteServlet</servlet-name>
+        <servlet-class>goit.gojava7.ryzhkov.servlet.product.ProductDeleteServlet</servlet-class>
+    </servlet>
+
+    <!--Main page servlets mapping-->
+
+    <servlet-mapping>
+        <servlet-name>MainPageServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+
+    <!--Errors servlets mapping-->
+
+    <servlet-mapping>
+        <servlet-name>ErrorStatusServlet</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+
+    <!--OK servlets mapping-->
+
+    <servlet-mapping>
+        <servlet-name>DoneStatusServlet</servlet-name>
+        <url-pattern>/done</url-pattern>
+    </servlet-mapping>
+
+    <!--Manufacturers servlets mapping-->
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerGetAllServlet</servlet-name>
+        <url-pattern>/manufacturers</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerGetServlet</servlet-name>
+        <url-pattern>/manufacturer</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerCreateServlet</servlet-name>
+        <url-pattern>/manufacturerCreate</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerUpdateServlet</servlet-name>
+        <url-pattern>/manufacturerUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManufacturerDeleteServlet</servlet-name>
+        <url-pattern>/manufacturerDelete</url-pattern>
+    </servlet-mapping>
+
+    <!--Products servlets mapping-->
+
+    <servlet-mapping>
+        <servlet-name>ProductsGetAllServlet</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductGetServlet</servlet-name>
+        <url-pattern>/product</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductCreateServlet</servlet-name>
+        <url-pattern>/productCreate</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductUpdateServlet</servlet-name>
+        <url-pattern>/productUpdate</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductDeleteServlet</servlet-name>
+        <url-pattern>/productDelete</url-pattern>
+    </servlet-mapping>
+
+</web-app>
