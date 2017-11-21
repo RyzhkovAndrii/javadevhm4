@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Error!!!</title>
+    <title>Done!</title>
 </head>
 <body>
 It's OK, <%=request.getAttribute("message")%> !!!
